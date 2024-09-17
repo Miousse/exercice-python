@@ -4,7 +4,7 @@ Created on Fri Sep 13 11:34:25 2024
 
 @author: abdulbaki.karatepe
 """
-
+#exo 7
 def lpp(a,b):
     if a<b:
         return a
@@ -12,7 +12,7 @@ def lpp(a,b):
         return b
 print(lpp(2.1,1.3))
 
-
+#exo 8
 def valeur_absolue(x):
     if x<0:
         x=x*-1
@@ -21,7 +21,7 @@ def valeur_absolue(x):
     return x
 print(valeur_absolue(-5))
 
-
+#exo 9
 def est_entier(x):
     if x==int:
         return True
@@ -29,7 +29,7 @@ def est_entier(x):
         return False
 print(est_entier(2.8))
 
-
+#exo 10
 def est_pair(n):
     if n%2==0:
         return True
@@ -37,7 +37,7 @@ def est_pair(n):
         return False
 print(est_pair(13))
 
-
+#exo 11
 def intervalle1(x):
     if -2<x<=3:
         return True
@@ -70,7 +70,7 @@ def intervalle4(x):
         return False
 print(intervalle4(2))
 
-
+#exo 12
 def signe(x):
     if x<0:
         return ("negatif")
@@ -78,7 +78,7 @@ def signe(x):
         return ("positif")
 print(signe(-5))
 
-
+#exo 13
 def est_bissextile(n):
     if n%400==0:
         return (n,"est s% bissextile")
