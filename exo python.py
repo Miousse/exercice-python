@@ -87,3 +87,48 @@ def est_bissextile(n):
     if n%4==0:
         return (n,"est bissextile")
 print(est_bissextile(2000))
+#exo 14
+def seuil(eps):
+    u = 1
+    n = 0
+    while (u > eps):
+        u = u/(n+1)
+        n = n+1
+    return n
+
+S = 0
+for i in range(1, 10):
+    S = S + i**2
+print (S)
+#exo 15
+def somme_puissance_trois(n):
+    S = 0
+    for j in range(4,n):
+        S = S+3**j
+    return S
+#exo 16
+def somme_puissance(n,p):
+    for i in range(1,n):
+        n = n**p
+    return n
+#exo 17
+    counter = 0
+    for i in range(1,n):
+        if i%7==0:
+            counter+=1
+    return counter
+#exo 17
+def mult_7_pas_3_5(n):
+    counter = 0
+    for i in range(1,n+1):
+        if i%7==0 and (i%3!=0 and i%5!=0):
+            counter +=1
+    return counter
+print(mult_7_pas_3_5(22))
+#exo 18
+def est_parfait(num):
+     sum=0
+     for i in range(1,num+1):
+         if num % i==0:
+             sum+=i
+     return sum == 2*num
