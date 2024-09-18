@@ -132,3 +132,6 @@ def est_parfait(num):
          if num % i==0:
              sum+=i
      return sum == 2*num
+
+#exo 19
+def 
