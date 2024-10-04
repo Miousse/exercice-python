@@ -151,3 +151,63 @@ def alea():
             break
     else:
         print(f'Finie !!. Le nombre etait: {cible}')
+
+
+TP 2:
+ef miroir(n):
+    n_inverse = ""
+    for i in n:
+        n_inverse = i + n_inverse
+    return n_inverse
+
+n = "jeid"
+print(miroir(n))
+
+def pol(nom):
+    n_inverse = ""
+    for i in nom:
+        n_inverse = i + n_inverse
+    if n_inverse == nom:
+        return True
+    return False
+
+
+def aff(c,n):
+    for i in range(1, n+1):
+        print(c*i)
+
+def premier_occ(ch, c):
+    for i, charater in enumerate(ch):
+        if charater == c:
+            return i 
+    return None
+
+def sous_chaine(ch1, ch2):
+    if ch1 in ch2:
+        return True
+
+    if ch2 in ch1: 
+        return True
+
+    return False
+
+print(sous_chaine('jahhs','hs'))
+
+def triple_six(ch):
+    return '333' in ch
+
+def palindrome(n):
+    ch=""
+    for i in n:
+       ch=i+ch
+    if ch == n:
+        return True
+    return False
+
+def space(ch):
+    n=""
+    for k in range(len(ch)):
+        if ch[k]!=" ":
+            n = n+ch[k]
+    return n
+            
